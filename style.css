@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    cursor: alias;
+}
+
+body {
+    background: #19191d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 500px;
+    background: #9c9c9c;
+    border-radius: 10px;
+}
+
+#calculator #display {
+    background-color: black;
+    width: 450px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: end;
+    font-size: 5em;
+}
+
+#calculator #display p {
+    margin-right: 10px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 450px;
+    height: 570px;
+}
+
+#buttons div {
+    display: flex;
+    justify-content: center;
+    gap: 7.5px;
+}
+
+#buttons .button {
+    height: 105px;
+    width: 105px;
+    border-radius: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #19191d;
+    font-size: 2em;
+
+    cursor: grab;
+}
+
+#buttons .doubleSpace{
+    width: 215px;
+}
+
+#buttons .number:hover{
+    background: rgb(66, 66, 66);
+}
+
+#buttons .operation{
+    background: #666666;
+}
+
+#buttons .operation:hover{
+    background: #3d3d3d;
+}
+
+#buttons .operator {
+    background: #ff9900;
+}
+
+#buttons .operator:hover {
+    background: #c57600;
+}
